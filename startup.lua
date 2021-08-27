@@ -1,1 +1,1 @@
-shell.run("kos.lua")
+shell.run("os.lua")
