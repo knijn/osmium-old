@@ -1,1 +1,13 @@
-
+textutils.slowPrint("Starting installation of kOS-Mobile")
+textutils.slowPrint("Getting os.lua")
+shell.run("wget https://github.com/knijn/kOS-mobile/blob/main/os.lua os.lua")
+textutils.slowPrint("os.lua successfully installed")
+textutils.slowPrint("Getting home.lua")
+shell.run("wget https://github.com/knijn/kOS-mobile/blob/main/home.lua home.lua")
+textutils.slowPrint("home.lua successfully installed")
+textutils.slowPrint("Getting startup.lua"
+shell.run("wget https://github.com/knijn/kOS-mobile/blob/main/startup.lua startup.lua")
+textutils.slowPrint("startup.lua successfully installed")
+textutils.slowPrint("kOS-Mobile succesfully installed")
+textutils.slowPrint("Rebooting")
+os.reboot()
