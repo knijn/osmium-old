@@ -1,1 +1,1 @@
-shell.run("os.lua")
+shell.run("/osmium/os.lua")
