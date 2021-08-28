@@ -5,7 +5,7 @@ textutils.slowPrint("os.lua successfully installed")
 textutils.slowPrint("Getting home.lua")
 shell.run("wget https://github.com/knijn/osmium/blob/main/home.lua home.lua")
 textutils.slowPrint("home.lua successfully installed")
-textutils.slowPrint("Getting startup.lua"
+textutils.slowPrint("Getting startup.lua")
 shell.run("wget https://github.com/knijn/osmium/blob/main/startup.lua startup.lua")
 textutils.slowPrint("startup.lua successfully installed")
 textutils.slowPrint("osmium succesfully installed")
