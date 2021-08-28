@@ -1,8 +1,14 @@
-print("Starting installation of osmium")
-shell.run("wget https://raw.githubusercontent.com/knijn/osmium/main/os.lua os.lua")
-shell.run("wget https://raw.githubusercontent.com/knijn/osmium/main/home.lua home.lua")
-shell.run("wget https://raw.githubusercontent.com/knijn/osmium/main/startup.lua startup.lua")
-print("Osmium succesfully installed")
-print("Rebooting")
-sleep(2)
+if switchcraft then
+  print("Running on switchcraft, using gitget.")
+  shell.run("gitget","knijn","osmium","main")
+  fs.delete("installer"); fs.delete("README")
+else
+  print("Geting file 1/3")
+  shell.run("wget https://github.com/knijn/osmium/blob/main/os.lua os.lua")
+  print("Geting file 2/3")
+  shell.run("wget https://github.com/knijn/osmium/blob/main/home.lua home.lua")
+  print("Geting file 3/3")
+  shell.run("wget https://github.com/knijn/osmium/blob/main/startup.lua startup.lua")
+  print("Installed.")
+end
 os.reboot()
