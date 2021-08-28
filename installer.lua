@@ -1,7 +1,7 @@
 if switchcraft then
   print("Running on switchcraft, using gitget.")
   shell.run("gitget","knijn","osmium","main")
-  fs.delete("installer"); fs.delete("README")
+  fs.delete("installer.lua"); fs.delete("README.md")
 else
   print("Geting file 1/3")
   shell.run("wget https://github.com/knijn/osmium/blob/main/os.lua os.lua")
