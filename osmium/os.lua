@@ -1,5 +1,5 @@
 -- Load screen
-term.setBackgroundColor(backgroundColor)
+term.setBackgroundColor(colors.black)
 term.clear()
 term.setCursorPos(1,1)
 term.write("Loading")
