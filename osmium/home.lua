@@ -9,11 +9,7 @@ confighandle.close()
 
 
 -- Color variable setup
-local backgroundColor = common.returnColor(config.backgroundColor)
-local textColor = common.returnColor(config.textColor)
-local accentColor = common.returnColor(config.accentColor)
-local tertiaryColor = common.returnColor(config.tertiaryColor)
-local tertiaryTextColor = common.returnColor(config.tertiaryTextColor)
+common.configColor()
 
 CommonUI.ClearScreen(backgroundColor)
 
