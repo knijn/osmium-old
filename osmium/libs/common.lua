@@ -40,6 +40,13 @@ common.returnColor = function (color) -- Only way I can think of
   end
 end
 
+common.configColor = function()
+   local backgroundColor = colors.white
+   local textColor = colors.black
+   local accentColor = colors.cyan
+   local tertiaryColor = colors.gray
+   local tertiaryTextColor = colors.white
+
 common.listen = function ()
   -- A modem channel must be opened to use this
   local event, side, ch, rch, msg, dist = os.pullEvent("modem_message")
